@@ -1,0 +1,2 @@
+language: node-armhf-multiarch
+fprocess: node index.js
