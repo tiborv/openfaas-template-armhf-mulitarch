@@ -1,6 +1,6 @@
 FROM multiarch/alpine:armhf-v3.9
 
-RUN apk add --no-cache nodejs yarn ca-certificates
+RUN apk add --no-cache nodejs-current yarn ca-certificates
 RUN apk --no-cache add curl \
     && echo "Pulling watchdog binary from Github." \
     && curl -sSL https://github.com/openfaas/faas/releases/download/0.13.0/fwatchdog-armhf > /usr/bin/fwatchdog \
